@@ -1,0 +1,143 @@
+_scrcpy() {
+    local cur prev words cword
+    local opts="
+        --always-on-top
+        --audio-bit-rate=
+        --audio-codec=
+        --audio-codec-options=
+        --audio-encoder=
+        -b --video-bit-rate=
+        --crop=
+        -d --select-usb
+        --disable-screensaver
+        --display=
+        --display-buffer=
+        -e --select-tcpip
+        --force-adb-forward
+        --forward-all-clicks
+        -f --fullscreen
+        -K --hid-keyboard
+        -h --help
+        --legacy-paste
+        --list-displays
+        --list-encoders
+        --lock-video-orientation
+        --lock-video-orientation=
+        --max-fps=
+        -M --hid-mouse
+        -m --max-size=
+        --no-audio
+        --no-cleanup
+        --no-clipboard-autosync
+        --no-downsize-on-error
+        -n --no-control
+        -N --no-display
+        --no-key-repeat
+        --no-mipmaps
+        --no-power-on
+        --otg
+        -p --port=
+        --power-off-on-close
+        --prefer-text
+        --print-fps
+        --push-target=
+        --raw-key-events
+        -r --record=
+        --record-format=
+        --render-driver=
+        --require-audio
+        --rotation=
+        -s --serial=
+        --shortcut-mod=
+        -S --turn-screen-off
+        -t --show-touches
+        --tcpip
+        --tcpip=
+        --tunnel-host=
+        --tunnel-port=
+        --v4l2-buffer=
+        --v4l2-sink=
+        -V --verbosity=
+        -v --version
+        --video-codec=
+        --video-codec-options=
+        --video-encoder=
+        -w --stay-awake
+        --window-borderless
+        --window-title=
+        --window-x=
+        --window-y=
+        --window-width=
+        --window-height="
+
+    _init_completion -s || return
+
+    case "$prev" in
+        --video-codec)
+            COMPREPLY=($(compgen -W 'h264 h265 av1' -- "$cur"))
+            return
+            ;;
+        --audio-codec)
+            COMPREPLY=($(compgen -W 'opus aac raw' -- "$cur"))
+            return
+            ;;
+        --lock-video-orientation)
+            COMPREPLY=($(compgen -W 'unlocked initial 0 1 2 3' -- "$cur"))
+            return
+            ;;
+        -r|--record)
+            COMPREPLY=($(compgen -f -- "$cur"))
+            return
+            ;;
+        --record-format)
+            COMPREPLY=($(compgen -W 'mkv mp4' -- "$cur"))
+            return
+            ;;
+        --render-driver)
+            COMPREPLY=($(compgen -W 'direct3d opengl opengles2 opengles metal software' -- "$cur"))
+            return
+            ;;
+        --rotation)
+            COMPREPLY=($(compgen -W '0 1 2 3' -- "$cur"))
+            return
+            ;;
+        --shortcut-mod)
+            # Only auto-complete a single key
+            COMPREPLY=($(compgen -W 'lctrl rctrl lalt ralt lsuper rsuper' -- "$cur"))
+            return
+            ;;
+        -V|--verbosity)
+            COMPREPLY=($(compgen -W 'verbose debug info warn error' -- "$cur"))
+            return
+            ;;
+        -s|--serial)
+            # Use 'adb devices' to list serial numbers
+            COMPREPLY=($(compgen -W "$("${ADB:-adb}" devices | awk '$2 == "device" {print $1}')" -- ${cur}))
+            return
+            ;;
+        -b|--video-bit-rate \
+        |--codec-options \
+        |--crop \
+        |--display \
+        |--display-buffer \
+        |--encoder \
+        |--max-fps \
+        |-m|--max-size \
+        |-p|--port \
+        |--push-target \
+        |--tunnel-host \
+        |--tunnel-port \
+        |--v4l2-buffer \
+        |--v4l2-sink \
+        |--tcpip \
+        |--window-*)
+            # Option accepting an argument, but nothing to auto-complete
+            return
+            ;;
+    esac
+
+    COMPREPLY=($(compgen -W "$opts" -- "$cur"))
+    [[ $COMPREPLY == *= ]] && compopt -o nospace
+}
+
+complete -F _scrcpy scrcpy
