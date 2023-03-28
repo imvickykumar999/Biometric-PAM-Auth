@@ -1,0 +1,231 @@
+
+03/28 12:53:20: Launching 'app' on samsung SM-A217F.
+Install successfully finished in 180 ms.
+$ adb shell am start -n "com.an.biometric.sample/com.an.biometric.sample.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Connected to process 6391 on device 'samsung-sm_a217f-RZ8N60JN0EE'.
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+I/iometric.sampl: Late-enabling -Xcheck:jni
+E/USNET: USNET: appName: com.an.biometric.sample
+D/ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+D/ActivityThread: setConscryptValidator
+D/ActivityThread: setConscryptValidator - put
+V/studio.deploy: Startup agent attached to VM
+V/studio.deploy: No existing instrumentation found. Loading instrumentation from instruments-6b5afa68.jar
+W/iometric.sampl: DexFile /data/data/com.an.biometric.sample/code_cache/.studio/instruments-6b5afa68.jar is in boot class path but is not in a known location
+V/studio.deploy: Applying transforms with cached classes
+W/iometric.sampl: Redefining intrinsic method java.lang.Thread java.lang.Thread.currentThread(). This may cause the unexpected use of the original definition of java.lang.Thread java.lang.Thread.currentThread()in methods that have already been compiled.
+W/iometric.sampl: Redefining intrinsic method boolean java.lang.Thread.interrupted(). This may cause the unexpected use of the original definition of boolean java.lang.Thread.interrupted()in methods that have already been compiled.
+D/ActivityThread: handleBindApplication()++ app=com.an.biometric.sample
+D/CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10791; state: DISABLED
+D/ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+W/ziparchive: Unable to open '/data/app/~~q92_CfCBQjWZmRR-kazkgg==/com.an.biometric.sample-4NDqRfiXAO0C2QXhNprvXw==/base.dm': No such file or directory
+W/ziparchive: Unable to open '/data/app/~~q92_CfCBQjWZmRR-kazkgg==/com.an.biometric.sample-4NDqRfiXAO0C2QXhNprvXw==/base.dm': No such file or directory
+V/GraphicsEnvironment: ANGLE Developer option for 'com.an.biometric.sample' set to: 'default'
+V/GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+D/LoadedApk: LoadedApk::makeApplication() appContext.mOpPackageName=com.an.biometric.sample appContext.mBasePackageName=com.an.biometric.sample
+D/NetworkSecurityConfig: No Network Security Config specified, using platform default
+D/NetworkSecurityConfig: No Network Security Config specified, using platform default
+D/ActivityThread: handleBindApplication() --
+D/OpenGLRenderer: RenderThread::requireGlContext()
+D/hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+D/OpenGLRenderer: RenderThread::setGrContext()
+I/DecorView: [INFO] isPopOver=false, config=true
+I/DecorView: updateCaptionType >> DecorView@cc94d77[], isFloating=false, isApplication=true, hasWindowControllerCallback=true, hasWindowDecorCaption=false
+D/DecorView: setCaptionType = 0, this = DecorView@cc94d77[]
+I/DecorView: getCurrentDensityDpi: from real metrics. densityDpi=280 msg=resources_loaded
+W/iometric.sampl: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+W/iometric.sampl: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+I/ViewRootImpl@530dfc8[MainActivity]: setView = com.android.internal.policy.DecorView@cc94d77 TM=true
+I/ViewRootImpl@530dfc8[MainActivity]: Relayout returned: old=(0,0,720,1600) new=(0,0,720,1600) req=(720,1600)0 dur=10 res=0x7 s={true 479577047040} ch=true fn=-1
+D/OpenGLRenderer: eglCreateWindowSurface
+I/Gralloc4: mapper 4.x is not supported
+W/Gralloc3: mapper 3.x is not supported
+I/ViewRootImpl@530dfc8[MainActivity]: [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11420 android.view.ViewRootImpl.performTraversals:4193 android.view.ViewRootImpl.doTraversal:2919 
+D/ViewRootImpl@530dfc8[MainActivity]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+D/ViewRootImpl@530dfc8[MainActivity]: Creating frameCompleteCallback
+I/gralloc: Arm Module v1.0
+W/Gralloc4: allocator 4.x is not supported
+W/Gralloc3: allocator 3.x is not supported
+D/ViewRootImpl@530dfc8[MainActivity]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+D/ViewRootImpl@530dfc8[MainActivity]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+I/ViewRootImpl@530dfc8[MainActivity]: [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:4995 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+I/ViewRootImpl@530dfc8[MainActivity]: [DP] rdf()
+D/ViewRootImpl@530dfc8[MainActivity]: reportDrawFinished (fn: -1) 
+D/InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.an.biometric.sample/com.an.biometric.sample.MainActivity
+D/InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on com.an.biometric.sample/com.an.biometric.sample.MainActivity
+I/ViewRootImpl@530dfc8[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+D/InputMethodManager: startInputInner - Id : 0
+I/InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+D/InputMethodManager: startInputInner - Id : 0
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 0
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 1
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 0
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 1
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 0
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 1
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 0
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 1
+I/ViewRootImpl@530dfc8[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+D/InputTransport: Input channel destroyed: 'ClientS', fd=107
+I/BiometricPrompt: onAuthenticationFailed
+W/System: A resource failed to call close. 
+I/BiometricPrompt: onAuthenticationFailed
+I/BiometricPrompt: onAuthenticationSucceeded: 2
+D/CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10791; state: DISABLED
+V/Toast: show: caller = com.an.biometric.sample.MainActivity.onAuthenticationSuccessful:84 
+V/Toast: show: focusDisplayId = 0, isFocusInDesktop = false mCustomDisplayId=-1 isDexDualMode=false
+V/Toast: show: isActivityContext = false
+D/InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.an.biometric.sample/com.an.biometric.sample.MainActivity
+D/InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on com.an.biometric.sample/com.an.biometric.sample.MainActivity
+V/ToastPresenter: sipHeight = -84
+V/ToastPresenter: Text: Mogi in android.widget.ToastPresenter@c92c1d3
+I/ViewRootImpl@dbd0110[Toast]: setView = android.widget.LinearLayout@f3da82f TM=true
+I/ViewRootImpl@dbd0110[Toast]: Relayout returned: old=(0,68,720,1516) new=(207,1332,513,1404) req=(306,72)0 dur=8 res=0x7 s={true 479577325568} ch=true fn=-1
+D/OpenGLRenderer: eglCreateWindowSurface
+I/ViewRootImpl@dbd0110[Toast]: [DP] dp(1) 0 android.view.ViewRootImpl.reportNextDraw:11420 android.view.ViewRootImpl.performTraversals:4193 android.view.ViewRootImpl.doTraversal:2919 
+D/ViewRootImpl@dbd0110[Toast]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+D/ViewRootImpl@dbd0110[Toast]: Creating frameCompleteCallback
+D/ViewRootImpl@dbd0110[Toast]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+D/ViewRootImpl@dbd0110[Toast]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+I/ViewRootImpl@dbd0110[Toast]: [DP] pdf(0) 0 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:4995 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+I/ViewRootImpl@dbd0110[Toast]: [DP] rdf()
+D/ViewRootImpl@dbd0110[Toast]: reportDrawFinished (fn: -1) 
+I/ViewRootImpl@530dfc8[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+D/InputMethodManager: startInputInner - Id : 0
+I/InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+D/OpenGLRenderer: setSurface called with nullptr
+D/OpenGLRenderer: setSurface() destroyed EGLSurface
+D/OpenGLRenderer: destroyEglSurface
+I/ViewRootImpl@dbd0110[Toast]: dispatchDetachedFromWindow
+D/InputTransport: Input channel destroyed: 'cdfe4ba', fd=69
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 0
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 1
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 0
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 1
+I/ViewRootImpl@530dfc8[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+D/InputTransport: Input channel destroyed: 'ClientS', fd=138
+I/BiometricPrompt: onAuthenticationSucceeded: 2
+V/Toast: show: caller = com.an.biometric.sample.MainActivity.onAuthenticationSuccessful:84 
+V/Toast: show: focusDisplayId = 0, isFocusInDesktop = false mCustomDisplayId=-1 isDexDualMode=false
+V/Toast: show: isActivityContext = false
+D/InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.an.biometric.sample/com.an.biometric.sample.MainActivity
+D/InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on com.an.biometric.sample/com.an.biometric.sample.MainActivity
+V/ToastPresenter: sipHeight = -84
+V/ToastPresenter: Text: Mogi in android.widget.ToastPresenter@ea3ab41
+I/ViewRootImpl@f23e8e6[Toast]: setView = android.widget.LinearLayout@2beba7d TM=true
+I/ViewRootImpl@f23e8e6[Toast]: Relayout returned: old=(0,68,720,1516) new=(207,1332,513,1404) req=(306,72)0 dur=10 res=0x7 s={true 479577325568} ch=true fn=-1
+D/OpenGLRenderer: eglCreateWindowSurface
+I/ViewRootImpl@f23e8e6[Toast]: [DP] dp(1) 0 android.view.ViewRootImpl.reportNextDraw:11420 android.view.ViewRootImpl.performTraversals:4193 android.view.ViewRootImpl.doTraversal:2919 
+D/ViewRootImpl@f23e8e6[Toast]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+D/ViewRootImpl@f23e8e6[Toast]: Creating frameCompleteCallback
+D/ViewRootImpl@f23e8e6[Toast]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+D/ViewRootImpl@f23e8e6[Toast]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+I/ViewRootImpl@f23e8e6[Toast]: [DP] pdf(0) 0 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:4995 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+I/ViewRootImpl@f23e8e6[Toast]: [DP] rdf()
+D/ViewRootImpl@f23e8e6[Toast]: reportDrawFinished (fn: -1) 
+I/ViewRootImpl@530dfc8[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+D/InputMethodManager: startInputInner - Id : 0
+I/InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+D/OpenGLRenderer: setSurface called with nullptr
+D/OpenGLRenderer: setSurface() destroyed EGLSurface
+D/OpenGLRenderer: destroyEglSurface
+I/ViewRootImpl@f23e8e6[Toast]: dispatchDetachedFromWindow
+D/InputTransport: Input channel destroyed: 'ef54596', fd=103
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 0
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 1
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 0
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 1
+I/ViewRootImpl@530dfc8[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+D/InputTransport: Input channel destroyed: 'ClientS', fd=137
+I/BiometricPrompt: onDialogDismissed: 2
+V/Toast: show: caller = com.an.biometric.sample.MainActivity.onAuthenticationCancelled:78 
+V/Toast: show: focusDisplayId = 0, isFocusInDesktop = false mCustomDisplayId=-1 isDexDualMode=false
+V/Toast: show: isActivityContext = false
+D/InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.an.biometric.sample/com.an.biometric.sample.MainActivity
+D/InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on com.an.biometric.sample/com.an.biometric.sample.MainActivity
+V/ToastPresenter: sipHeight = -84
+V/ToastPresenter: Text: Buth in android.widget.ToastPresenter@12d2ebe
+I/ViewRootImpl@96efb1f[Toast]: setView = android.widget.LinearLayout@10978ca TM=true
+I/ViewRootImpl@96efb1f[Toast]: Relayout returned: old=(0,68,720,1516) new=(101,1332,619,1404) req=(518,72)0 dur=11 res=0x7 s={true 479577325568} ch=true fn=-1
+D/OpenGLRenderer: eglCreateWindowSurface
+I/ViewRootImpl@96efb1f[Toast]: [DP] dp(1) 0 android.view.ViewRootImpl.reportNextDraw:11420 android.view.ViewRootImpl.performTraversals:4193 android.view.ViewRootImpl.doTraversal:2919 
+D/ViewRootImpl@96efb1f[Toast]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+D/ViewRootImpl@96efb1f[Toast]: Creating frameCompleteCallback
+D/ViewRootImpl@96efb1f[Toast]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+D/ViewRootImpl@96efb1f[Toast]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+I/ViewRootImpl@96efb1f[Toast]: [DP] pdf(0) 0 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:4995 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+I/ViewRootImpl@96efb1f[Toast]: [DP] rdf()
+D/ViewRootImpl@96efb1f[Toast]: reportDrawFinished (fn: -1) 
+I/ViewRootImpl@530dfc8[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+D/InputMethodManager: startInputInner - Id : 0
+I/InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+D/OpenGLRenderer: setSurface called with nullptr
+D/OpenGLRenderer: setSurface() destroyed EGLSurface
+D/OpenGLRenderer: destroyEglSurface
+I/ViewRootImpl@96efb1f[Toast]: dispatchDetachedFromWindow
+D/InputTransport: Input channel destroyed: 'ef217cd', fd=71
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 0
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 1
+I/iometric.sampl: Compiler allocated 4564KB to compile void android.view.ViewRootImpl.performTraversals()
+I/ViewRootImpl@530dfc8[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+D/InputTransport: Input channel destroyed: 'ClientS', fd=138
+I/BiometricPrompt: onDialogDismissed: 2
+V/Toast: show: caller = com.an.biometric.sample.MainActivity.onAuthenticationCancelled:78 
+V/Toast: show: focusDisplayId = 0, isFocusInDesktop = false mCustomDisplayId=-1 isDexDualMode=false
+V/Toast: show: isActivityContext = false
+D/InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.an.biometric.sample/com.an.biometric.sample.MainActivity
+D/InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on com.an.biometric.sample/com.an.biometric.sample.MainActivity
+V/ToastPresenter: sipHeight = -84
+V/ToastPresenter: Text: Buth in android.widget.ToastPresenter@bef2f17
+I/ViewRootImpl@7fa3f04[Toast]: setView = android.widget.LinearLayout@62da5b3 TM=true
+I/ViewRootImpl@7fa3f04[Toast]: Relayout returned: old=(0,68,720,1516) new=(101,1332,619,1404) req=(518,72)0 dur=11 res=0x7 s={true 479577325568} ch=true fn=-1
+D/OpenGLRenderer: eglCreateWindowSurface
+I/ViewRootImpl@7fa3f04[Toast]: [DP] dp(1) 0 android.view.ViewRootImpl.reportNextDraw:11420 android.view.ViewRootImpl.performTraversals:4193 android.view.ViewRootImpl.doTraversal:2919 
+D/ViewRootImpl@7fa3f04[Toast]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+D/ViewRootImpl@7fa3f04[Toast]: Creating frameCompleteCallback
+D/ViewRootImpl@7fa3f04[Toast]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+D/ViewRootImpl@7fa3f04[Toast]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+I/ViewRootImpl@7fa3f04[Toast]: [DP] pdf(0) 0 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:4995 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+I/ViewRootImpl@7fa3f04[Toast]: [DP] rdf()
+D/ViewRootImpl@7fa3f04[Toast]: reportDrawFinished (fn: -1) 
+I/ViewRootImpl@530dfc8[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+D/InputMethodManager: startInputInner - Id : 0
+I/InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+D/OpenGLRenderer: setSurface called with nullptr
+D/OpenGLRenderer: setSurface() destroyed EGLSurface
+D/OpenGLRenderer: destroyEglSurface
+I/ViewRootImpl@7fa3f04[Toast]: dispatchDetachedFromWindow
+D/InputTransport: Input channel destroyed: '73e0571', fd=69
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 0
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 1
+I/ViewRootImpl@530dfc8[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0 1
+D/InputTransport: Input channel destroyed: 'ClientS', fd=139
+I/BiometricPrompt: onAuthenticationSucceeded: 2
+V/Toast: show: caller = com.an.biometric.sample.MainActivity.onAuthenticationSuccessful:84 
+V/Toast: show: focusDisplayId = 0, isFocusInDesktop = false mCustomDisplayId=-1 isDexDualMode=false
+V/Toast: show: isActivityContext = false
+D/InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.an.biometric.sample/com.an.biometric.sample.MainActivity
+D/InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on com.an.biometric.sample/com.an.biometric.sample.MainActivity
+V/ToastPresenter: sipHeight = -84
+V/ToastPresenter: Text: Mogi in android.widget.ToastPresenter@3b86a9c
+I/ViewRootImpl@6a91ca5[Toast]: setView = android.widget.LinearLayout@a2f9488 TM=true
+I/ViewRootImpl@6a91ca5[Toast]: Relayout returned: old=(0,68,720,1516) new=(207,1332,513,1404) req=(306,72)0 dur=10 res=0x7 s={true 479577325568} ch=true fn=-1
+D/OpenGLRenderer: eglCreateWindowSurface
+I/ViewRootImpl@6a91ca5[Toast]: [DP] dp(1) 0 android.view.ViewRootImpl.reportNextDraw:11420 android.view.ViewRootImpl.performTraversals:4193 android.view.ViewRootImpl.doTraversal:2919 
+D/ViewRootImpl@6a91ca5[Toast]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+D/ViewRootImpl@6a91ca5[Toast]: Creating frameCompleteCallback
+D/ViewRootImpl@6a91ca5[Toast]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+D/ViewRootImpl@6a91ca5[Toast]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+I/ViewRootImpl@6a91ca5[Toast]: [DP] pdf(0) 0 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:4995 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+I/ViewRootImpl@6a91ca5[Toast]: [DP] rdf()
+D/ViewRootImpl@6a91ca5[Toast]: reportDrawFinished (fn: -1) 
+I/ViewRootImpl@530dfc8[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+D/InputMethodManager: startInputInner - Id : 0
+I/InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+D/OpenGLRenderer: setSurface called with nullptr
+D/OpenGLRenderer: setSurface() destroyed EGLSurface
+D/OpenGLRenderer: destroyEglSurface
+I/ViewRootImpl@6a91ca5[Toast]: dispatchDetachedFromWindow
+D/InputTransport: Input channel destroyed: 'c80689a', fd=101
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 0
+I/ViewRootImpl@530dfc8[MainActivity]: ViewPostIme pointer 1
