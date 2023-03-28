@@ -1,11 +1,11 @@
 
-# pip install pure-python-adb
 # https://gist.github.com/arjunv/2bbcca9a1a1c127749f8dcb6d36fb0bc
 # https://itnext.io/how-you-can-control-your-android-device-with-python-45c3ab15e260
 
+# pip install pure-python-adb
 
 from ppadb.client import Client as AdbClient
-import time
+import time, json, os
 
 def connect():
     client = AdbClient(host="127.0.0.1", port=5037) # Default is "127.0.0.1" and 5037
@@ -20,6 +20,12 @@ def connect():
     return device, client
 
 device, client = connect()
+
+
+with open("keyevents.json", "r") as json_file:
+    my_dict = json.load(json_file)
+    
+# print(' '.join(my_dict['key_events']['key_power'].split()[2:]))
 
 
 def browser_search():
@@ -66,17 +72,24 @@ def screen_shot():
 
 
 if __name__ == '__main__':
+    # pass 
+
     click_photo()
     # browser_search()
     screen_shot()
 
-    # '26' is for power button
-    device.shell('input keyevent 26')
+    cmd = my_dict['key_events']['key_power']
+    os.system(cmd)
+
+    # device.shell('input keyevent 26') # '26' is for power button
+    print('Powered Off')
 
 
 '''
 python connect.py
 
-Connected to <ppadb.device.Device object at 0x00000208B219F610>
+Connected to <ppadb.device.Device object at 0x000001CEAD579F40>
 Taken a photo!
+Saved screenshot!
+Powered Off
 '''
