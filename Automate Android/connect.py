@@ -39,7 +39,7 @@ if __name__ == '__main__':
     
 
 '''
->>> python connect.py
+python connect.py
 
 Connected to <ppadb.device.Device object at 0x00000208B219F610>
 Taken a photo!
